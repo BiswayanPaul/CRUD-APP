@@ -8,7 +8,7 @@ const app = express()
 app.use(cors(
     {
         origin: ["https://crud-app-frontend-78lnhgdsy-biswayanpaul.vercel.app/"],
-        method: ["POST","GET"],
+        method: ["POST","GET","PUT","DELETE"],
         credentials: true
     }
 ))
