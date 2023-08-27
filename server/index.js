@@ -8,6 +8,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+mongoose.connect('mongodb+srv://biswayanpaul:biswayan@cluster0.rnhqocb.mongodb.net/crud?retryWrites=true&w=majority')
+
+
 const PORT = process.env.PORT || 8080
 
 //schema
