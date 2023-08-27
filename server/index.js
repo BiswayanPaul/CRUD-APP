@@ -37,8 +37,8 @@ const userModel = mongoose.model("user", schemaData)
 
 app.get("/", async (req, res) => {
     const data = await userModel.find({})
-    res.send("hello")
-    //res.json({ success: true, data: data })
+    res.json("hello")
+    res.json({ success: true, data: data })
 })
 
 // create data || save data in mongodb
