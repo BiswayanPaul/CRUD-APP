@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Formtable from "./components/formtable";
 
-axios.defaults.baseURL = "http://localhost:8080/"
+axios.defaults.baseURL = "https://crud-app-eta-two.vercel.app/"
 
 
 function App() {
