@@ -5,7 +5,13 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["https://crud-app-frontend-78lnhgdsy-biswayanpaul.vercel.app/"],
+        method: ["POST","GET"],
+        credentials: true
+    }
+))
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://biswayanpaul:biswayan@cluster0.rnhqocb.mongodb.net/crud?retryWrites=true&w=majority')
